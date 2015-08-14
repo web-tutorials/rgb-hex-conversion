@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" ng-app="hexrgbconversion">
+<head>
+    <meta charset="UTF-8">
+    <title>RGB HEX conversion</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+<div class="container" ng-controller="default">
+    <div class="col-md-6">
+        <form class="form-inline">
+            <fieldset>
+                <legend>RGB:</legend>
+                <div class="form-group col-md-6">
+                    <label for="red">Name</label>
+                    <input type="text" class="form-control" id="red" placeholder="RED" ng-model="rgb.red">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="green">Name</label>
+                    <input type="text" class="form-control" id="green" placeholder="GREEN" ng-model="rgb.green">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="blue">Name</label>
+                    <input type="text" class="form-control" id="blue" placeholder="BLUE" ng-model="rgb.blue">
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-default" ng-click="convertRGBToHex()">Convert to HEX</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <form class="form-inline">
+            <fieldset>
+                <legend>HEX:</legend>
+                <div class="form-group col-md-6">
+                    <label for="hex">Name</label>
+                    <input type="text" class="form-control" id="hex" placeholder="" ng-model="hex">
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-default" ng-click="convertHexToRGB()">Convert to RGB</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+</html>

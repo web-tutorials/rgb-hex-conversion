@@ -1,0 +1,24 @@
+{
+  "name": "rgb-hex-conversion",
+  "version": "1.0.0",
+  "description": "Convert between RGB and HEX with easy way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-tutorials/rgb-hex-conversion.git"
+  },
+  "author": "ducito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web-tutorials/rgb-hex-conversion/issues"
+  },
+  "homepage": "https://github.com/web-tutorials/rgb-hex-conversion#readme",
+  "dependencies": {
+    "angular": "^1.4.4",
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4"
+  }
+}
